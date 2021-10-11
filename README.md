@@ -1,5 +1,4 @@
 # JNews
-=======
 <img src="./imgs/unknown.png" width="48%" /> <img src="./imgs/img2.png" width="48%" />
 
 <img src="./imgs/img3.png" width="48%" /> <img src="./imgs/img4.png" width="48%" />
