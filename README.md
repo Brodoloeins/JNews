@@ -29,3 +29,4 @@ O projeto conta com:
   - Login de um painel administrador 
   - Control Panel com função de excluir e adicionar notícias
 
+Esse foi todo o projeto espero que tenha sido proveitoso e que gostem do código, por mais que esteja sem nenhum design pattern e sem o padrão de projeto clean code
