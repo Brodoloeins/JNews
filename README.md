@@ -18,3 +18,14 @@ Esse projeto foi desenvolvido usando as seguites ferramentas:
   - JavaScript
 
 O objetivo deste projeto foi evoluir minhas habilidades com Node.js e com rotas no express.
+Também me ajudou na compreensão melhor do mongoose e da dinâmica de funcionamento do MongoDB Atlas. 
+
+O projeto conta com:
+  - Tela inicial 
+  - Ranking das notícias 
+  - Notícias mais recentes 
+  - Busca de notícias 
+  - Pagina para cada notícia de forma dinâmica 
+  - Login de um painel administrador 
+  - Control Panel com função de excluir e adicionar notícias
+
