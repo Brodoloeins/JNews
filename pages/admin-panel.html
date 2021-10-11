@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .header-panel {
+            width: 100%;
+            padding: 10px;
+            background-color: #243;
+            color: white;
+        }
+        form{
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        form input{
+            margin-bottom: 20px;
+            padding: 5px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        form input[type="submit"]{
+            height: 40px;
+            background-color: #243;
+            border: 0;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="header-panel">
+        <h2>Cadastro Notícia</h2>
+    </section>
+    
+    <main class="form-cadastro">
+        <form enctype="multipart/form-data" action="/admin/cadastro" method="post">
+            <input type="text" name="titulo_noticia" placeholder="Título da notícia">
+            <input type="text" name="slug" placeholder="Slug">
+            <input type="file" name="arquivo">
+            <input type="text" name="noticia" placeholder="Notícia">
+            <input type="submit" name="acao" value="Cadastrar!" >
+        </form>
+    </main>
+
+        <br><br>
+    <section class="header-panel">
+        <h2>Listando Notícias</h2>
+    </section>
+    <% for (var i = 0; i < posts.length; i++) { %>
+    <article style="margin-top:20px; border-bottom: 2px dashed #ccc; padding: 10px; display: flex; justify-content: space-between;" class="noticia-single">
+        <p>Título Notícia: <%-posts[i].titulo %> </p>
+        <a href="/admin/deletar/<%= posts[i]._id %>">(X)</a>
+    </article>
+    <%}%>
+</body>
+</html>

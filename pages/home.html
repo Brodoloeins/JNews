@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<%- include('partials/header.html') %>
+    <main class="noticia-destaque">
+        <div class="center">
+            <div class="img-destaque">
+                <div class="overlay-destaque"></div>
+                <div class="title-destaque-descricao">
+                    <a style="color: #fff; text-decoration: none;" href="<%= posts[0].slug %>"><h2><%= posts[0].titulo %></h2></a> 
+                    <p><%- posts[0].descricaoCurta %>...</p>
+                </div>
+                <img src="<%= posts[0].imagem %>">
+            </div>
+        </div>
+    </main>
+
+    <section class="outras-noticias">
+        <div class="title-outras-noticias">
+            <br><br>
+            <h2>Últimas publicações</h2>
+            <br><br>
+            <div class="center">
+                <section class="ultimas">
+                    <% for(let i = 1; i < posts.length; i++){ %>
+                    <div class="box-ultima-single">
+                        <img src="<%= posts[i].imagem %>">
+                        <div class="content">
+                            <h3><%= posts[i].categoria %></h3>
+                            <h2><%= posts[i].titulo %></h2>
+                            <p><%- posts[i].descricaoCurta %>...</p>    
+                            <a href="<%= posts[i].slug %>">Saiba mais</a>
+                        </div>
+                    </div>
+                    <% } %>
+                </section>
+                <section class="mais-lidas">
+                    <h3>Mais lidas</h3>
+                    <div class="mais-lidas-noticias">
+                        <% for(let i = 0; i < postsTop.length; i++){ %>
+                        <article class="mais-lida-noticia-single">
+                            <img src="<%= postsTop[i].imagem %>" alt="">
+                            <div class="texto-mais-lida-single">
+                                <h4><%= postsTop[i].titulo %></h4>
+                                <p><%- postsTop[i].descricaoCurta %>... <span style="font-size: 12px; font-weight: bold;" >(<%=postsTop[i].views%> views)</span> </p>
+                                <a href="<%= postsTop[i].slug %>">Saiba mais</a>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </section>
+            </section>
+
+        <%- include('partials/footer.html') %>
+</body>
+</html>
