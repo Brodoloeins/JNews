@@ -1,9 +1,9 @@
 # JNews
-<img src="./imgs/unknown.png" width="48%" /> <img src="./imgs/img2.png" width="48%" />
+<img src="./imgs/unknown.png" /> <img src="./imgs/img2.png" />
 
-<img src="./imgs/img3.png" width="48%" /> <img src="./imgs/img4.png" width="48%" />
+<img src="./imgs/img3.png" /> <img src="./imgs/img4.png" />
 
-<img src="./imgs/img5.png" width="48%" /> <img src="./imgs/img6.png" width="48%" />
+<img src="./imgs/img5.png" /> <img src="./imgs/img6.png" />
 
 Projeto desenvolvido com a danki code e alterado para coisas do meu gosto, como a estilização, a paleta de cores, o login de usuário, a estilização dos inputs, entre outras coisas. 
 
